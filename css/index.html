@@ -114,7 +114,15 @@
     <h1 class="display-5 fw-bold mb-4">Aprenem CSS</h1>
     <p class="lead">En aquesta pàgina farem pràctiques de CSS.</p> 
 
-<style>body { background-color: #F5279F; } h1 { background-color: yellow; }</style><h1>Títol amb fons</h1>
+<style>body { background-color: #F5279F; } h1 { background-color: yellow;   font-family: 'Anna Vives',cursive;
+        src:url('httos://gbarba-afk.github.io/ANNA.ttf');
+      }
+
+      body{
+        font-family:'Anna Vives',cursive;
+      }
+      p{
+        font-size: 20px; }</style><h1>Títol amb fons</h1>
     
   </main>
   
@@ -128,16 +136,7 @@
     themeToggle.addEventListener('click', () => {
       if (document.body.getAttribute('data-bs-theme') === 'dark') {
     
-        font-family: 'Anna Vives',cursive;
-        src:url('httos://gbarba-afk.github.io/ANNA.ttf');
-      }
 
-      body{
-        font-family:'Anna Vives',cursive;
-      }
-      p{
-        font-size: 20px;
-        
         
         document.body.setAttribute('data-bs-theme', 'light');
         themeIcon.classList.remove('fa-sun');
